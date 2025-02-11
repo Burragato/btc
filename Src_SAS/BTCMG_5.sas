@@ -1,10 +1,10 @@
 
 * Calcolo medie settimanali a 14 e 21 settimane;
 
-data B4ds.BTCMG5;
+data BTCMG5;
 
    retain action ema14s ema21s;
-   set B4ds.BTCMG4;
+   set BTCMG4;
    retain overall_gains 100 overall_gains_netto 100 buy_prices 0 sell_prices;
    retain overall_gains2 100 overall_gains2_netto 100;
    l_actions=lag(actions);
